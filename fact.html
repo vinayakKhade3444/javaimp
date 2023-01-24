@@ -1,0 +1,22 @@
+//practical 10.2
+<html>
+<body align="center">
+<script>
+function fact()
+{
+       var n,i,f=1;
+       n=parseInt(document.getElementById("no").value);
+       for(i=1;i<=n;i++)
+       {
+              f=f*i;
+       }
+       document.getElementById("res").innerHTML="The factorial of "+n+" is "+f;
+}
+</script>
+<br><br>
+<h2>Program to find factorial of a number</h2><br>
+Enter a number  <input type="text" id="no"><br><br>
+<button onclick="fact()">Factorial</button><br>
+<p id="res"></p>
+</body>
+</html>

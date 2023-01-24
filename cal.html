@@ -1,0 +1,28 @@
+//practical no.10.4
+<html>
+<body align="center">
+<script>
+var n1,n2,m,d;
+function mul()
+{
+     n1=parseInt(document.getElementById("no1").value);
+     n2=parseInt(document.getElementById("no2").value);
+     m=n1*n2;
+     document.getElementById("res").value=m; 
+}
+function div()
+{
+     n1=parseInt(document.getElementById("no1").value);
+     n2=parseInt(document.getElementById("no2").value);
+     d=n1/n2;
+     document.getElementById("res").value=d; 
+}
+</script>
+<h2>Program to calculate multiplication and division</h2><br>
+Enter number 1  <input type="text" id="no1"><br><br>
+Enter number 2  <input type="text" id="no2"><br><br>
+Result  <input type="text" id="res"><br><br><br>
+<button onclick="mul()">Multiplication</button><br><br>
+<button onclick="div()">Division</button>
+</body>
+</html>

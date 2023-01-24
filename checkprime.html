@@ -1,0 +1,34 @@
+//practical no.10.3
+<html>
+<body align="center">
+<script>
+function check()
+{
+     var n,i,result=0;
+     n=parseInt(document.getElementById("no").value);
+     for(i=2;i<n;i++)
+     {
+          if(n%2==0)
+          {
+                 result++;
+                 break;
+          } 
+}
+if(result==0)
+{
+    document.getElementById("res").innerHTML = n+" is a prime number";  
+}
+else
+{
+    document.getElementById("res").innerHTML = n+" is not a prime number";
+}
+}
+</script>
+<br><br>
+<h2>Program to check a prime number</h2><br>
+Enter a number  <input type="text" id="no"><br><br>
+<button onclick="check()">Check</button><br>
+<p id="res"></p>
+</body>
+</html>
+
